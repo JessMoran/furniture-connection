@@ -270,11 +270,14 @@ body {
 }
 
 .furniture{
-  max-height: 150px;
+  margin-top: 20px;
+  max-height: 200px;
+  border-radius: 10px;
   min-height: 100px;
 }
 
 .furniturecontainer{
   background-color: rgba(128, 128, 128, 0.384);
   margin: 20px;
+  border-radius: 10px;
 }
