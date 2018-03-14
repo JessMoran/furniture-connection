@@ -21,6 +21,11 @@ body {
   text-align: center;
 }
 
+#about-us{
+  color: #000;
+  font-weight: 700;
+}
+
 #categories {}
 /* Media para pantallas grandes */
 .grid {
