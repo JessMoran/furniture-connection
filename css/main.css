@@ -147,3 +147,7 @@ footer{
   text-align: center !important;
   width: 10%;
 }
+
+.furniture-img{
+  cursor: pointer;
+}
