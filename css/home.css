@@ -60,7 +60,9 @@ body {
     grid-gap: 20px;
     grid-template-rows: 2fr 1fr 1fr 2fr;
     grid-template-areas: "out out din" "liv liv din" "liv liv din" "bed bed study"
+    
   }
+  
 }
 
 #bed2 {
