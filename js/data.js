@@ -130,7 +130,7 @@ var dataPictures = {
             '5': ["assets/images/sbookcase5a.jpg", "assets/images/sbookcase5b.jpg", "assets/images/sbookcase5c.jpg"],
         }
     },
-    'garden': {
+    'outdoor': {
         'sofa': {
             '1': ["assets/images/outsofa1a.jpg", "assets/images/outsofa1b.jpg", "assets/images/outsofa1c.jpg"],
             '2': ["assets/images/outsofa2a.jpg", "assets/images/outsofa2b.jpg"],
@@ -141,7 +141,7 @@ var dataPictures = {
         'chair': {
             '1': ["assets/images/outchair1a.jpg", "assets/images/outchair1b.jpg", "assets/images/outchair1c.jpg"],
             '2': ["assets/images/outchair2a.jpg", "assets/images/outchair2b.jpg", "assets/images/outchair2c.jpg"],
-            '3': ["assets/images/outchai31a.jpg", "assets/images/outchair3b.jpg", "assets/images/outchair3c.jpg"],
+            '3': ["assets/images/outchair1a.jpg", "assets/images/outchair3b.jpg", "assets/images/outchair3c.jpg"],
         },
         'table': {
             '1': ["assets/images/outtable1a.jpg", "assets/images/outtable1b.jpg", "assets/images/outtable1c.jpg"],

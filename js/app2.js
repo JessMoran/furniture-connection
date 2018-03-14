@@ -88,15 +88,15 @@ function selectObject(sectionSearch) {
       //    'consoletable':  "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=console+table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
     }
     createFurnitureSection(studio, sectionSearch)
-  }else if (sectionSearch === 'garden') {
-    const garden = {
+  }else if (sectionSearch === 'outdoor') {
+    const outdoor = {
       'sofa': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=outdoor%20sofa&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
       'chair': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=outdoor%20chair&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
       'table': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=outdoor%20table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
       'bench': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=bench&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
       //    'consoletable':  "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=console+table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
     }
-    createFurnitureSection(garden, sectionSearch)
+    createFurnitureSection(outdoor, sectionSearch)
   }else if (sectionSearch === 'dinning') {
     const dinning = {
       'dinnertable': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=dinner%20table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
@@ -166,10 +166,12 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     console.log("secorrióunavez")
     let template = `
   <div class=" col furniturecontainer">
-      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name="${productName}"  data-price=${productPrice} data-description="${productDescription}" class="furniture furniture-img" alt="" onclick="getProduct(this)">
-      <h5>${productName}</h5>
-      <span>${productPrice}</span>
-      <button class="btn button d-block mx-auto" type="button" id="addCart " data-img=${setImages2} data-name= "${productName}"  data-price= ${productPrice} onclick="getCart(this)"> Agregar al carrito </button>
+
+      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name="${productName}"  data-price=${productPrice} data-description="${productDescription}" class="furniture" alt="" onclick="getProduct(this)">
+      <h5 class="text-uppercase font-weight-bold">${productName}</h5>
+      <span>$ ${productPrice}</span>
+      <button class="btn button d-block mx-auto m-2" type="button" id="addCart " data-img=${setImages2} data-name= "${productName}"  data-price=${productPrice} onclick="getCart(this)"> Agregar al carrito </button>
+
   </div>`;
     const spaceContainer = document.getElementById(spaceName)
     spaceContainer.insertAdjacentHTML('beforeend', template);
