@@ -166,10 +166,12 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     console.log("secorrióunavez")
     let template = `
   <div class=" col furniturecontainer">
+
       <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name="${productName}"  data-price=${productPrice} data-description="${productDescription}" class="furniture" alt="" onclick="getProduct(this)">
       <h5 class="text-uppercase font-weight-bold">${productName}</h5>
       <span>$ ${productPrice}</span>
       <button class="btn button d-block mx-auto m-2" type="button" id="addCart " data-img=${setImages2} data-name= "${productName}"  data-price=${productPrice} onclick="getCart(this)"> Agregar al carrito </button>
+
   </div>`;
     const spaceContainer = document.getElementById(spaceName)
     spaceContainer.insertAdjacentHTML('beforeend', template);
