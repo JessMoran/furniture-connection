@@ -9,6 +9,8 @@ function getProduct(eventTrigger) {
     container.classList.add('d-none');
     homePage.classList.add('d-none');
     productPage.classList.remove('d-none');
+    checkout.classList.add('d-none');
+  
     let template = `
     <br>
     <br>

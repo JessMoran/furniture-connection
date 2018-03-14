@@ -7,6 +7,8 @@ function getCheckOut(eventTrigger) {
     homePage.classList.add('d-none');
     productPage.classList.add('d-none');
     checkout.classList.remove('d-none');
+
+    
     calculateTotal(eventTrigger);
 }
 function calculateTotal() {

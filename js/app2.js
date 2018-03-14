@@ -8,10 +8,22 @@ let homePage = document.getElementById('homepage');
 let productPage = document.getElementById('product')
 //let firstCarrousel = document.getElementById('title');
 
+
+function getHome(){
+  homePage.classList.remove('d-none');
+  container.classList.add('d-none');
+  productPage.classList.add('d-none')
+  checkout.classList.add('d-none');
+}
+
+
 function getData(eventTrigger) {
   event.preventDefault();
   homePage.classList.add('d-none');
   container.classList.remove('d-none');
+  productPage.classList.add('d-none')
+  checkout.classList.add('d-none');
+ 
   console.log(eventTrigger);
   let sectionSearch = eventTrigger.getAttribute("name");
   console.log(sectionSearch);
