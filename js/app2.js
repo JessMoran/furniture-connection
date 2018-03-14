@@ -134,11 +134,14 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     let spaceName = objectKey;
     console.log(url);
     console.log(spaceName);
-    let furnitureTitle = $("<h3></h3>").text(spaceName);
+    let furnitureTitle = $("<h3></h3>").text(spaceName.toUpperCase());
+    furnitureTitle.attr({
+      class: 'text-capitalize font-weight-bold',
+  });
     let furniturecontainer = $("<div></div>");
     furniturecontainer.attr({
       id: spaceName,
-      class : "row nopadding"
+      class : "row nopadding d-inline-block text-center"
     });
     $('#furniturecontainer').append(furnitureTitle);
     $('#furniturecontainer').append(furniturecontainer);
@@ -177,12 +180,12 @@ function createFurnitureSection(spaceObject, sectionSearch) {
 //console.log($('#furniturecontainer'));
     console.log("secorrióunavez")
     let template = `
-  <div class=" col furniturecontainer">
+  <div class=" col furniturecontainer d-inline-block">
 
-      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name="${productName}"  data-price=${productPrice} data-description="${productDescription}" class="furniture" alt="" onclick="getProduct(this)">
-      <h5 class="text-uppercase font-weight-bold">${productName}</h5>
+      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name="${productName.substr(0, 30)}"  data-price=${productPrice} data-description="${productDescription}" class="furniture" alt="" onclick="getProduct(this)">
+      <h6 class="text-uppercase font-weight-bold">${productName.substr(0, 30)}</h6>
       <span>$ ${productPrice}</span>
-      <button class="btn button d-block mx-auto m-2" type="button" id="addCart " data-img=${setImages2} data-name= "${productName}"  data-price=${productPrice} onclick="getCart(this)"> Agregar al carrito </button>
+      <button class="btn button d-block mx-auto m-2" type="button" id="addCart " data-img=${setImages2} data-name= "${productName.substr(0, 30)}"  data-price=${productPrice} onclick="getCart(this)"> Agregar al carrito </button>
 
   </div>`;
     const spaceContainer = document.getElementById(spaceName)
