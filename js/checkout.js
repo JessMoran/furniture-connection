@@ -24,10 +24,6 @@ function getPriceTitle(finalCart) {
     finalCart.forEach(element => {
         template += `
         <br>
-      <br>
-      <br>
-      <br>
-
         <div class="row">
         <div class="col">
             <img class="img-fluid" height="100px"  width="100px" src="${element.imagen}" alt="cama">

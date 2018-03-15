@@ -162,7 +162,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
             console.log(route);
             // console.log(value, i)
             let productName = value.name;
-            let productPrice = value.salePrice;
+            let productPrice = Math.round(value.salePrice);
             let productDescription = value.shortDescription;
             let finalIndex = [i + 1]
             let setImages = (route[finalIndex]);
