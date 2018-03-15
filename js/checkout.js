@@ -34,7 +34,7 @@ function getPriceTitle(finalCart) {
         <div class="col">
             <p>${element.price}</p>
         </div>
-    </div>
+    </div>`
         //   console.log(template);
         arrayNumbers.push(parseInt(element.price.replace( /[^0-9]/, '' )));
     });
@@ -85,7 +85,7 @@ function getPayPal(totalSum) {
                     transactions: [{
                         amount: {
                             total: `${totalSum}`,
-                            currency: 'MXN'
+                            currency: 'USD'
                         }
                     }]
                 }
