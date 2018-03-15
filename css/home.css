@@ -295,3 +295,8 @@ body {
 .about{
   min-height: 200px;
 }
+
+.imcar{
+  width: 100%;
+  height: auto;
+}

@@ -185,7 +185,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
       <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name="${productName.substr(0, 30)}"  data-price=${productPrice} data-description="${productDescription}" class="furniture" alt="" onclick="getProduct(this)">
       <h6 class="text-uppercase font-weight-bold">${productName.substr(0, 30)}</h6>
       <span>$ ${productPrice}</span>
-      <button class="btn button d-block mx-auto m-2" type="button" id="addCart " data-img=${setImages2} data-name= "${productName.substr(0, 30)}"  data-price=${productPrice} onclick="getCart(this)"> Agregar al carrito </button>
+      <button class="btn button d-block mx-auto m-2" type="button" id="addCart " data-img=${setImages2} data-name= "${productName.substr(0, 30)}"  data-price=${productPrice} onclick="getCart(this)"> Add to cart</button>
 
   </div>`;
     const spaceContainer = document.getElementById(spaceName)
