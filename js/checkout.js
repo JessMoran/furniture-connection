@@ -35,7 +35,6 @@ function getPriceTitle(finalCart) {
             <p>${element.price}</p>
         </div>
     </div>
-        `
         //   console.log(template);
         arrayNumbers.push(parseInt(element.price.replace( /[^0-9]/, '' )));
     });
