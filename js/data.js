@@ -67,7 +67,6 @@ var dataPictures = {
             '1': ["assets/images/barc1a.jpg", "assets/images/barc1b.jpg", "assets/images/barc1c.jpg"],
             '2': ["assets/images/barc2a.jpg", "assets/images/barc2b.jpg", "assets/images/barc2c.jpg"],
             '3': ["assets/images/barc3a.jpg", "assets/images/barc3b.jpg", "assets/images/barc3c.jpg"],
-            '4': ["assets/images/barc4a.jpg", "assets/images/barc4b.jpg", "assets/images/barc4c.jpg"],
 
         },
         'barstools': {
@@ -92,8 +91,8 @@ var dataPictures = {
             '1': ["assets/images/cajon1a.jpg", "assets/images/cajon1b.jpg", "assets/images/cajon1c.jpg", "assets/images/cajon1d.jpg"],
         },
         'dresser': {
-            '1': ["assets/images/dresser6a.jpg", "assets/images/dresser6b.jpg", "assets/images/dresser6c.jpg"],
-            '2': ["assets/images/draw-dresser-a.jpg", "assets/images/draw-dresser-b.jpg", "assets/images/draw-dresser-c.jpg", "assets/images/draw-dresser-d.jpg"],
+          
+            '2': ["assets/images/dresser1a.jpg", "assets/images/dresser1b.jpg", "assets/images/dresser1c.jpg", "assets/images/draw-dresser-d.jpg"],
         },
         'nightlamp': {
             '1': ["assets/images/lampara-1a.jpg", "assets/images/lampara-1b.jpg"],
