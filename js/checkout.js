@@ -85,7 +85,7 @@ function getPayPal(totalSum) {
                     transactions: [{
                         amount: {
                             total: `${totalSum}`,
-                            currency: 'MXN'
+                            currency: 'USD'
                         }
                     }]
                 }
