@@ -12,7 +12,7 @@ function getData(eventTrigger) {
   event.preventDefault();
   homePage.classList.add('d-none');
   container.classList.remove('d-none');
-  console.log(eventTrigger);
+  console.log(eventTrigger); http://escolarweb.tese.edu.mx
   let sectionSearch = eventTrigger.getAttribute("name");
   console.log(sectionSearch);
   let section = dataFourniture[sectionSearch];
