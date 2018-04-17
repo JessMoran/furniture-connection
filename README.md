@@ -21,5 +21,5 @@ Ofrece un filtrado de muebles seccionado para diferentes espacios de una casa.
 
 ![Vista de Home & Houses](assets/images/p7.png)
 
-##REalizado para:
-Laboratoria 
+##Realizado para:
+Laboratoria

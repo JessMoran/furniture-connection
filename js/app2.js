@@ -21,27 +21,18 @@ function getData(eventTrigger) {
   event.preventDefault();
   homePage.classList.add('d-none');
   container.classList.remove('d-none');
-<<<<<<< HEAD
-  console.log(eventTrigger); http://escolarweb.tese.edu.mx
-||||||| merged common ancestors
-  console.log(eventTrigger);
-=======
+
   productPage.classList.add('d-none')
   checkout.classList.add('d-none');
- 
-  console.log(eventTrigger);
->>>>>>> ea6a56d8378c4148b0eb1c0e00646cba183ca427
+
   let sectionSearch = eventTrigger.getAttribute("name");
-  console.log(sectionSearch);
   let section = dataFourniture[sectionSearch];
   let sectionTitle = section.title;
-  console.log(sectionTitle);
   title.textContent = sectionTitle;
   let sectionDescription = section.description;
   description.textContent = sectionDescription;
   let sectionCarrouselImg = section.firstCarrousel;
   let firstSectionCarrouselImg = sectionCarrouselImg[0];
-  console.log(firstSectionCarrouselImg);
   $('#firstCarImg').attr('src', firstSectionCarrouselImg);
   let secondSectionCarrouselImg = sectionCarrouselImg[1]
   $('#secondCarImg').attr('src', secondSectionCarrouselImg);
