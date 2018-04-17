@@ -60,7 +60,9 @@ body {
     grid-gap: 20px;
     grid-template-rows: 2fr 1fr 1fr 2fr;
     grid-template-areas: "out out din" "liv liv din" "liv liv din" "bed bed study"
+    
   }
+  
 }
 
 #bed2 {
@@ -276,13 +278,25 @@ body {
 
 .furniture{
   margin-top: 20px;
-  max-height: 200px;
+  max-height: 170px;
   border-radius: 10px;
   min-height: 100px;
 }
 
 .furniturecontainer{
-  background-color: rgba(128, 128, 128, 0.384);
+  background-color: rgba(128, 128, 128, 0.2);
   margin: 20px;
   border-radius: 10px;
+  max-height: 440px;
+  max-width: 390px;
+}
+
+
+.about{
+  min-height: 200px;
+}
+
+.imcar{
+  width: 100%;
+  height: auto;
 }

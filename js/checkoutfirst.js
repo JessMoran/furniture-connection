@@ -35,9 +35,9 @@ function decreaseCounter(eventTrigger) {
 
 function changeButtonStatus(condition, eventTrigger) {
     if (condition === true) {
-        eventTrigger.textContent = 'Agregar al carrito';
+        eventTrigger.textContent = 'Add to cart';
     } else if (condition === false) {
-        eventTrigger.textContent = 'Quitar del carrito';
+        eventTrigger.textContent = 'Remove from cart';
     }
 }
 

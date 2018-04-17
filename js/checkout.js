@@ -7,6 +7,8 @@ function getCheckOut(eventTrigger) {
     homePage.classList.add('d-none');
     productPage.classList.add('d-none');
     checkout.classList.remove('d-none');
+
+    
     calculateTotal(eventTrigger);
 }
 function calculateTotal() {
@@ -22,10 +24,6 @@ function getPriceTitle(finalCart) {
     finalCart.forEach(element => {
         template += `
         <br>
-      <br>
-      <br>
-      <br>
-
         <div class="row">
         <div class="col">
             <img class="img-fluid" height="100px"  width="100px" src="${element.imagen}" alt="cama">
@@ -36,8 +34,7 @@ function getPriceTitle(finalCart) {
         <div class="col">
             <p>${element.price}</p>
         </div>
-    </div>
-        `
+    </div>`
         //   console.log(template);
         arrayNumbers.push(parseInt(element.price.replace( /[^0-9]/, '' )));
     });
@@ -88,7 +85,7 @@ function getPayPal(totalSum) {
                     transactions: [{
                         amount: {
                             total: `${totalSum}`,
-                            currency: 'MXN'
+                            currency: 'USD'
                         }
                     }]
                 }

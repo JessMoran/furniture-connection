@@ -26,6 +26,9 @@ width: 50%;
 }
 
 
+.about{
+  min-height: 200px;
+}
 /* TODO: PASAR AL MAIN CSS */
 .furniture{
   max-height: 150px;
